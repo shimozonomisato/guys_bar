@@ -11,7 +11,7 @@ echo "<br>";
 echo "<br>";
 for ($i = 1; $i <= 9; $i++){
 	$ans = 1 * $i;
-	echo '1×'. $i.'='.$ans.'/';
+ 	echo '1×'. $i.'='.$ans.'/';
 }
 
 
