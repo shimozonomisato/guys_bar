@@ -1,16 +1,12 @@
-<table border="1">
 <?php
-//$data = array(1,2,3,4,5,6,7,8,9);
-for($a=1; $a <= 100; $a++){
-	$data[$a-1]=$a;
+//rand()を使い、配列に10個のランダムな数字をいれて一覧を表示
+
+for($a=1; $a<=10; $a++){
+	$hoge[$a] = rand(1,100);
+	
 }
-for($a=1; $a <= count($data); $a++){
-	echo"<tr><td>".$a."</td></tr><tr>";
-	for($i = 1; $i <= count($data); $i++){
-		echo "<td>".($i * $a)."</td>";
-	}
-	echo"</tr>";
-	// echo"<br>";
+foreach($hoge as $val){
+		print $val."<br>";
 }
-?>
-</table>
+
+print_r($hoge);
